@@ -1,0 +1,393 @@
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Личный кабинет</title>
+  <meta name="description" content="админка">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Стили -->
+
+  <link rel="stylesheet" href="modal-window-1.css">
+  <link rel="stylesheet" href="style2.css">
+
+
+</head>
+
+
+<body class="body">
+  <!-- Главный контейнер -->
+  <div class="page">
+    <header class="header">
+      <div> 
+        
+        <a href="index.html" class="boton-nav"> на Главную</a>
+      </div>
+      <div class="container">
+        <div>
+          <b> 2rbina 2rista </b> 
+        </div>
+        <div>
+          <h1 class="text-center text-upper">Личный кабинет</h1>
+          </p>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Главный контент -->
+    <main class="main-content">
+      <div class="container">
+
+        <section id="table">
+          <h2>Оставленные заявки</h2>
+
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Название маршрута</th>
+                <th>Дата</th>
+                <th>Стоимость</th>
+                <th>Действие</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>
+                  <a class="button review" href="#openModal2">
+                    <i class="fa fa-unlock"></i>
+                  </a>
+                  <div id="openModal2" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title">Заявка Номер:</h3>
+                          <form class="feedback-form" method="POST" action="https://httpbin.org/post">
+
+                          </form>
+                          <a href="#close" title="Close" class="close ">×</a>
+                        </div>
+                        <div class="modal-body">
+                          <div class="GID">
+                            <p>ФИО гида:</p>
+                            <p>Название маршрута:</p>
+                          </div>
+                          <div class="form-field">
+                            <p>Дата экскурсии:</p>
+
+                            <p>Время начала:</p>
+                            <p>Длительность:</p>
+                            <p>Колличество человек:</p>
+                          </div>
+                          <p>Дополнительные опции</p>
+                          <p>Название опции</p>
+                          <p>Название опции</p>
+                          <p>Итоговая Стоимость:</p>
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <a class="button edit" href="#openModal">
+                    <i class="fa fa-unlock"></i></a>
+                  <div id="openModal" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title"></h3>
+                          <form class="feedback-form" method="POST" action="https://httpbin.org/post">
+
+                          </form>
+                          <a href="#close" title="Close" class="close ">×</a>
+                        </div>
+                        <div class="modal-body">
+                          <p>Редактирования заявки</p>
+                          <div class="GID">
+                            <p>ФИО гида:</p>
+                            <p>Название маршрута:</p>
+                          </div>
+                          <div class="form-field">
+                            <label for="start">Дата экскурсии:</label>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2023-01-01"
+                              max="2099-12-31" />
+                            <br>
+                            <label for="source">Время начала:</label>
+                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+                            <br>
+                            <label for="source">Длительность:</label>
+                            <select name="request_for form-field" required>
+                              <option value=""> </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                            </select>
+                            <br>
+                            <label for="source">Колличество человек:</label>
+                            <input class="form-field" type="text" name="fio" required>
+                            <br>
+                          </div>
+                          <br>
+                          <p>Дополнительные опции</p>
+                          <br>
+                          <input type="checkbox" name="accept_tos" required>
+                          <label>Название опции</label>
+                          <br>
+                          <input type="checkbox" name="accept_tos" required>
+                          <label>Название опции</label>
+                          <br>
+                          <br>
+                          <p>Итоговая Стоимость:</p>
+                          <br>
+                          <input class="form-field btn form-submit" type="submit">
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="button trash" href="#openModal3">
+                    <i class="fa fa-unlock"></i></a>
+
+                </td>
+              </tr>
+              <tr>
+              <tr>
+                <td>1</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>
+                  <a class="button review" href="#openModal2">
+                    <i class="fa fa-unlock"></i>
+
+                  </a>
+                  <div id="openModal2" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title">Заявка Номер:</h3>
+                          <form class="feedback-form" method="POST" action="https://httpbin.org/post">
+
+                          </form>
+                          <a href="#close" title="Close" class="close ">×</a>
+                        </div>
+                        <div class="modal-body">
+                          <div class="GID">
+                            <p>ФИО гида:</p>
+                            <p>Название маршрута:</p>
+                          </div>
+                          <div class="form-field">
+                            <p>Дата экскурсии:</p>
+
+                            <p>Время начала:</p>
+                            <p>Длительность:</p>
+                            <p>Колличество человек:</p>
+                          </div>
+                          <p>Дополнительные опции</p>
+                          <p>Название опции</p>
+                          <p>Название опции</p>
+                          <p>Итоговая Стоимость:</p>
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <a class="button edit" href="#openModal">
+                    <i class="fa fa-unlock"></i></a>
+                  <div id="openModal" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title">Редактирования заявки</h3>
+                          <form class="feedback-form" method="POST" action="https://httpbin.org/post">
+
+                          </form>
+                          <a href="#close" title="Close" class="close ">×</a>
+                        </div>
+                        <div class="modal-body">
+                          <p>Редактирования заявки</p>
+                          <div class="GID">
+                            <p>ФИО гида:</p>
+                            <p>Название маршрута:</p>
+                          </div>
+                          <div class="form-field">
+                            <label for="start">Дата экскурсии:</label>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2023-01-01"
+                              max="2099-12-31" />
+                            <br>
+                            <label for="source">Время начала:</label>
+                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+                            <br>
+                            <label for="source">Длительность:</label>
+                            <select name="request_for form-field" required>
+                              <option value=""> </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                            </select>
+                            <br>
+                            <label for="source">Колличество человек:</label>
+                            <input class="form-field" type="text" name="fio" required>
+                            <br>
+                          </div>
+                          <br>
+                          <p>Дополнительные опции</p>
+                          <br>
+                          <input type="checkbox" name="accept_tos" required>
+                          <label>Название опции</label>
+                          <br>
+                          <input type="checkbox" name="accept_tos" required>
+                          <label>Название опции</label>
+                          <br>
+                          <br>
+                          <p>Итоговая Стоимость:</p>
+                          <br>
+                          <input class="form-field btn form-submit" type="submit">
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="button trash" href="#openModal3">
+                    <i class="fa fa-unlock"></i></a>
+                  <div id="openModal3" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title">Удаление заявки</h3>
+                          <a href="#close" title="Close" class="close">×</a>
+                        </div>
+                        <div class="modal-body">
+                          Вы уверены что хотите удалить заявку?
+                        </div>
+                        <br>
+                        <div class="card-container">
+                          <section class="card" id="about">
+                            <a class="btn3" href="#close">Нет</a>
+                          </section>
+                          <section class="card" id="stats">
+                            <a class="btn3" href="stats.html">Да</a>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+<!--начало модального окна-->
+          <div class="card-container">
+            <section class="card" id="about">
+              <a class="btn" href="#openModal4">Оформление заявки</a>
+              <div id="openModal4" class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Оформление заявки</h3>
+                      <form class="feedback-form" method="POST" action="https://httpbin.org/post">
+
+                      </form>
+                      <a href="#close" title="Close" class="close ">×</a>
+                    </div>
+                    <div class="modal-body">
+                      <p>Редактирования заявки</p>
+                      <div class="GID">
+                        <p>ФИО гида:</p>
+                        <p>Название маршрута:</p>
+                      </div>
+                      <div class="form-field">
+                        <label for="start">Дата экскурсии:</label>
+                        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2023-01-01"
+                          max="2099-12-31" />
+                        <br>
+                        <label for="source">Время начала:</label>
+                        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+                        <br>
+                        <label for="source">Длительность:</label>
+                        <select name="request_for form-field" required>
+                          <option value=""> </option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                        </select>
+                        <br>
+                        <label for="source">Колличество человек:</label>
+                        <input class="form-field" type="text" name="fio" required>
+                        <br>
+                      </div>
+                      <br>
+                      <p>Дополнительные опции</p>
+                      <br>
+                      <input type="checkbox" name="accept_tos" required>
+                      <label>Название опции</label>
+                      <br>
+                      <input type="checkbox" name="accept_tos" required>
+                      <label>Название опции</label>
+                      <br>
+                      <br>
+                      <p>Итоговая Стоимость:</p>
+                      <br>
+                      <input class="form-field btn form-submit" type="submit">
+                      </form>
+<!--модальное окно конец-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+
+
+        </section>
+
+
+
+      </div>
+
+    </main>
+
+
+  </div>
+
+
+</body>
+
+</html>

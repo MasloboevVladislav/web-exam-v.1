@@ -1,0 +1,150 @@
+body {
+  font-family: "Bitter", serif;
+}
+
+.list-link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.navigation-link {
+  color: #ffffff;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.navigation-link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.alert-section {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.alert-section-active {
+  background-color: #ffffff;
+  opacity: 1;
+  width: 100%;
+  height: 5rem;
+  padding: 2rem;
+}
+
+.main {
+  background-color: #f4f4f4;
+  color: #000000;
+}
+
+.advantage-card {
+  border: #000000 solid 4px;
+  border-radius: 10%;
+  max-width: 340px;
+}
+
+.card-text {
+  height: 13rem;
+}
+
+#search-field {
+  border: #000000 solid 3px;
+  border-radius: 2px;
+  outline: none;
+  text-align: center;
+}
+
+#sights-list {
+  border: #000000 solid 3px;
+  border-radius: 2px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.table-header,
+.table-row,
+.table-header-title,
+.table-body,
+.table-element {
+  border: #000000 solid 3px;
+  padding: 1rem;
+}
+
+.page-btn {
+  width: 2rem;
+  border: #000000 solid 1px;
+  color: #000000;
+}
+
+#experience-start,
+#experience-end,
+#list-language {
+  border: #000000 solid 3px;
+  border-radius: 2px;
+  outline: none;
+  text-align: center;
+}
+
+#experience-start,
+#experience-end {
+  width: 5rem;
+}
+
+.table-guide-header,
+.table-guide-row,
+.table-guide-title,
+.table-guide-body,
+.table-guide-element {
+  border: #804a00 solid 3px;
+  padding: 1rem;
+}
+
+.tableBtn {
+  background: #000000;
+  border: #000000 solid 2px;
+  transition: all 0.2s;
+}
+
+.tableBtn:hover {
+  opacity: 90%;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.tableBtn:active {
+  transform: translateY(2px);
+}
+
+.paginationBtn {
+  background: #000000;
+  border: #000000 solid 2px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #000000;
+  color: #f5deb3;
+}
+
+.backgroundChange {
+  color: white;
+  background: #25e1cb;
+}
+
+.table-request-header,
+.table-request-row,
+.table-request-title,
+.table-request-body,
+.table-request-element {
+  border: #000000 solid 3px;
+  padding: 1rem;
+}
+
+.alert-profile-section {
+  background-color: #f5deb3;
+  opacity: 1;
+  width: 100%;
+  height: 5rem;
+  padding: 2rem;
+}
